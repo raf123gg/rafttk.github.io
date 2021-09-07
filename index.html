@@ -1,0 +1,98 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="hy" xml:lang="hy">
+
+
+<body>
+
+
+<title>Երկրներ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>Հայաստան Հանրապետություն Դաշնակից երկրները</h2>
+  <p></p>
+
+<p>Հեղինակ`Ռաֆիկ Մարտիրոսյան</p>
+
+
+  <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'Հայաստան')">Հայաստան</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Ֆրանսիա')">Ֆրանսիա</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Հունաստան')">Հունաստան</button>
+	
+	
+  </div>
+  
+  <div id="Հայաստան" class="w3-container w3-border city">
+    <h2>Հայաստան</h2>
+	<p>Հայաստան, պաշտոնական անվանումը՝ Հայաստանի Հանրապետություն, պետություն Առաջավոր Ասիայում, թեև աշխարհա-քաղաքական և մշակութային առումներով գտնվում է արևելյան և հարավարևելյան Եվրոպայում։ Հյուսիսային մասում՝ Հայկական լեռնաշխարհի հյուսիս-արևելքում։</p>
+	<img src="3.jpg">
+  
+ 
+<audio controls>
+
+  <source src="g.mp3">
+  
+</audio>
+  
+  
+  </div>
+
+  <div id="Ֆրանսիա" class="w3-container w3-border city" style="display:none">
+   
+	
+	<h2>Ֆրանսիա</h2>
+    <p>Ֆրանսիական Հանրապետություն, ունիտար կիսանախագահական հանրապետություն Արևմտյան Եվրոպայում իր մի քանի անդրծովյան տարածքներով և կղզիներով, որոնք տեղակայված են Հնդկական, Խաղաղ և Ատլանտյան օվկիանոսներում։ Մայրցամաքային Ֆրանսիան ձգվում է Միջերկրական ծովից մինչև Անգլիական նեղուց և Հյուսիսային ծով, Հռենոսից մինչև Ատլանտյան օվկիանոս։</p> 
+  
+  <img src="k.png">
+  
+  
+<audio controls>
+  
+  <source src="apo.mp3" type="audio/mpeg">
+
+</audio>
+  
+  
+  
+  </div>
+
+  <div id="Հունաստան" class="w3-container w3-border city" style="display:none">
+    <h2>Հունաստան</h2>
+    <p>Հունաստան, պաշտոնապես՝ Էլլենական Հանրապետություն, պետություն Հարավարևելյան Եվրոպայում։ Մայրաքաղաքը և խոշորագույն քաղաքն Աթենքն է, որի վարչական տարածքի մեջ է մտնում նաև Պիրեոս համայնքը։ Հունաստանի բնակչության թիվը ըստ 2011 թվականի մարդահամարի տվյալների կազմում է 11 միլիոն մարդ։</p>
+	
+	
+	<img src="fr.png">
+  
+
+<audio controls>
+ 
+  <source src="epo.mp3" type="audio/mpeg">
+
+</audio>
+  
+ 
+  
+  
+  </div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+</body>
+</html>
